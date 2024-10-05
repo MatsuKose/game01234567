@@ -1,0 +1,6 @@
+@bgm uirusugaarisou
+@sfx hakusyu
+@back TitleBackground1 time:0
+@spawn Snow wait:false params:300,10
+@spawn Rain wait:false
+@stop

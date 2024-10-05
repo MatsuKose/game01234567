@@ -1,0 +1,55 @@
+;@printer Bubble.Left pos:42,80 visible:false time:0
+;@show Bubble wait:false
+;@char Nanikun.Happy wait:false
+@printer Bubble.Left pos:70,62 visible:false time:0
+@show Bubble wait:false
+@back sugimoto time:0
+@spawn ShakeBackground
+
+@sfx sugoi
+;@char gahaku
+@spawn Snow
+;@spawn ShakeCharacter params:gahaku,0
+
+gahaku: 画伯
+@bgm risou
+
+@spawn SunShafts params:1,10
+@despawn SunShafts params:50
+@choice "ジェリリダナンシー" goto:test_story
+@choice "下界へ戻る" goto:RouteA
+@choice "地下に行く" goto:RouteB
+@choice "このまま続ける"
+@stop
+
+
+@back red
+@back blue
+@back red
+@back blue
+@back red
+@back blue
+@char men1.men1_1
+よぉし三つ数える
+@char men2.men2_1
+それでも開けなきゃ
+お前の頭を吹っ飛�?��?
+....
+わかったな
+........1
+@hide men1 
+@hide men2
+@char women1.women1_1
+..
+@hide women1
+@char men1.men1_1
+@char men2.men2_2
+.......2
+@hide men1
+@hide men2
+@char men2.men2_2
+....3
+
+
+
+@stop
